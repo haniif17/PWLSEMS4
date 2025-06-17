@@ -1,7 +1,9 @@
 <?= $this->extend('layout') ?>
 
 <?= $this->section('content') ?>
-<section class="section profile">
+<div class="pagetitle">
+    <h1>Profil Pengguna</h1>
+</div><section class="section profile">
     <div class="row">
         <div class="col-xl-4">
             <div class="card">
@@ -25,7 +27,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Settings</button>
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Settings</button>
                         </li>
 
                     </ul>
@@ -60,7 +62,43 @@
                             </div>
 
                         </div>
-                    </div></div>
+                        <div class="tab-pane fade profile-settings pt-3" id="profile-settings">
+                            <h5 class="card-title">Pengaturan Akun</h5>
+                            <form>
+                                <div class="row mb-3">
+                                    <label for="usernameInput" class="col-md-4 col-lg-3 col-form-label">Username</label>
+                                    <div class="col-md-8 col-lg-9">
+                                        <input name="username" type="text" class="form-control" id="usernameInput" value="<?= esc($username) ?>" readonly>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Sandi Sekarang</label>
+                                    <div class="col-md-8 col-lg-9">
+                                        <input name="currentPassword" type="password" class="form-control" id="currentPassword">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Sandi Baru</label>
+                                    <div class="col-md-8 col-lg-9">
+                                        <input name="newPassword" type="password" class="form-control" id="newPassword">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="reEnterNewPassword" class="col-md-4 col-lg-3 col-form-label">Ulangi Sandi Baru</label>
+                                    <div class="col-md-8 col-lg-9">
+                                        <input name="reEnterNewPassword" type="password" class="form-control" id="reEnterNewPassword">
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Simpan Sandi</button>
+                                </div>
+                            </form>
+                        </div>
+                        </div></div>
             </div>
 
         </div>
