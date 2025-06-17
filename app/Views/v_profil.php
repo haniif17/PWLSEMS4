@@ -24,6 +24,10 @@
                             <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Overview</button>
                         </li>
 
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Settings</button>
+                        </li>
+
                     </ul>
                     <div class="tab-content pt-2">
 
