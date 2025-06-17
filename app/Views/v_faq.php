@@ -2,12 +2,6 @@
 <?= $this->section('content') ?>
 <div class="pagetitle">
     <h1>Frequently Asked Questions (FAQ)</h1>
-    <nav>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active">FAQ</li>
-        </ol>
-    </nav>
 </div><section class="section faq">
     <div class="row">
         <div class="col-lg-12">
