@@ -29,11 +29,11 @@
         return $data;
     } 
 
-    //test webservice
-    $send1 = curl();
-    echo "<pre>";
-    print_r($send1);
-    echo "</pre>"; 
+    // //test webservice
+    // $send1 = curl();
+    // echo "<pre>";
+    // print_r($send1);
+    // echo "</pre>"; 
     
     ?>
     <div class="p-3 pb-md-4 mx-auto text-center">
